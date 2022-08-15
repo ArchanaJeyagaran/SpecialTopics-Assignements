@@ -9,13 +9,17 @@ number<-as.numeric(number)
 
 # Check if the user input is a positive three digit numeric value. 
 # If not, print an error message and quit.
-if(is.na(number)|number < 100|number > 999) {
+##Can add spaces between the or-conditions to make it easier to read 
+if(is.na(number) | number < 100 | number > 999) {
   print("Invalid entry, please enter a positive three digit number. The program will now quit.")
 } else {
   
   # Check if the number is narcissistic. A narcissistic number, or an Armstrong number, 
   # is a number that is equal to the sum of the cubes of its own digits. 
   # 153, 370, 371, 407 are three digit Armstrong numbers.
+  
+  ##The names you assigned to these 3 objects were effective
+  ##Helped me understand which functions were being applied to each object
   
   # use the mod function to determine the last digit 
   last_digit <- number %% 10
@@ -38,4 +42,6 @@ if(is.na(number)|number < 100|number > 999) {
   
 }
 
+
+##Added comments where the ## are
 
